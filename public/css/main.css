@@ -1,0 +1,41 @@
+@font-face {
+    font-family: pixelatedFont;
+    src: url(fonts/fipps.otf);
+}
+
+@font-face {
+    font-family: munro;
+    src: url(fonts/PressStart2P.ttf);
+}
+
+
+h1 {
+    font-family: pixelatedFont;
+    text-align: center;
+    font-size: 60px;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+h2{
+	font-family: munro;
+	text-align: center;
+	font-size: 40px;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+    background-image: url(images/ba.png);
+    background-size: cover;
+    background-color:red;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: pink; 
+}
