@@ -44,9 +44,44 @@ body {
     background-color: pink; 
 }
 
-#tl{
-	width: 70px;
+#email{
+	width: 50px;
 	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#tl{
+	width: 50px;
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#linkedin{
+	width: 50px;
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#github{
+	width: 50px;
+	height: auto;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#footer{
+	font-family: munro;
+	text-align: center;
+	font-size: 20px;
+	margin:2%;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
 }
 
 
