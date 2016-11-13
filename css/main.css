@@ -1,4 +1,8 @@
-html, body {margin: 0; height: 100%; overflow: hidden}
+html, body {
+	margin: 0; 
+	height: 100%; 
+	overflow: hidden
+}
 
 @font-face {
     font-family: pixelatedFont;
@@ -27,21 +31,21 @@ h2{
 	margin: 0px;
 }
 
-body {
-    background-image: url(images/ba.jpg);
-    background-size: cover;   
-    background-repeat: no-repeat;
-    background-position: center center; 
-    background-color: #43d7e8;
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
 }
 
-#background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100%;
-    background-color: pink; 
+body{
+    background-image:  url(images/windmill.png), url(images/ba.jpg);
+    background-size: cover, cover;   
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center; 
+    background-color: #43d7e8, transparent;
 }
 
 #email{
@@ -105,6 +109,13 @@ a:active {
     left: 0;
     margin-right: auto;
     margin-left:auto;
+}
+
+#windmill{
+	background-image: url(images/windmill.png);
+    size: cover;   
+    position: center; 
+    background-color: transparent;
 }
 
 
