@@ -16,6 +16,7 @@ html, body {
 
 
 h1 {
+	z-index: 0;
     font-family: pixelatedFont;
     text-align: center;
     font-size: 60px;
@@ -24,6 +25,7 @@ h1 {
 }
 
 h2{
+	z-index: 0;
 	font-family: pixel;
 	text-align: center;
 	font-size: 40px;
@@ -41,11 +43,65 @@ h2{
 }
 
 body{
-    background-image:  url(images/windmill.png), url(images/ba.jpg);
+    background-image: url(images/cloud1.png), url(images/cloud2.png), url(images/cloud3.png), url(images/cloud4.png), url(images/windmill.png), url(images/ba.jpg);
     background-size: cover, cover;   
     background-repeat: no-repeat, no-repeat;
     background-position: center, center; 
     background-color: #43d7e8, transparent;
+}
+
+#windmill{
+	z-index:-1;
+	size: cover;
+	position: center;
+	max-width: 100%; 
+    height: auto; 
+    vertical-align: 0%;
+}
+
+#cloud1{
+	z-index:-1;
+	size: cover;
+	position: center;
+	max-width: 100%; 
+    height: auto; 
+    vertical-align: 0%;
+}
+
+#cloud2{
+	z-index:-2;
+	size: cover;
+	position: center;
+	max-width: 100%; 
+    height: auto; 
+    vertical-align: 0%;
+}
+
+#cloud3{
+	z-index:-3;
+	size: cover;
+	position: center;
+	max-width: 100%; 
+    height: auto; 
+    vertical-align: 0%;
+}
+
+#cloud4{
+	z-index:-4;
+	size: cover;
+	position: center;
+	max-width: 100%; 
+    height: auto; 
+    vertical-align: 0%;
+}
+
+#test1{
+	z-index:-1;
+	size: cover;
+	position: center;
+	max-width: 100%; 
+    height: auto; 
+    vertical-align: 0%;
 }
 
 #email{
@@ -109,13 +165,6 @@ a:active {
     left: 0;
     margin-right: auto;
     margin-left:auto;
-}
-
-#windmill{
-	background-image: url(images/windmill.png);
-    size: cover;   
-    position: center; 
-    background-color: transparent;
 }
 
 
