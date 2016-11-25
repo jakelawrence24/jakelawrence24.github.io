@@ -51,10 +51,10 @@ h1 {
 
 body{
     background-image: url(images/cloud1.png), url(images/windmill.png), url(images/ba.jpg);
-    background-size: cover, cover;   
-    background-repeat: no-repeat, no-repeat;
-    background-position: center, center; 
-    background-color: #43d7e8, transparent;
+    background-size: cover,cover, cover;   
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: center, center, center; 
+    background-color: transparent, #43d7e8, transparent;
 }
 
 #windmill{
