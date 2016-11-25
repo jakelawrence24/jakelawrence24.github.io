@@ -61,7 +61,7 @@ body{
 }
 
 #cloud1{
-	z-index:-1;
+	z-index: 0;
 	size: cover;
 	position: center;
 	max-width: 100%; 
@@ -70,15 +70,6 @@ body{
 }
 
 
-
-#test1{
-	z-index:-1;
-	size: cover;
-	position: center;
-	max-width: 100%; 
-    height: auto; 
-    vertical-align: 0%;
-}
 
 #email{
 	width: 50px;
@@ -135,7 +126,6 @@ a:active {
 }
 
 .top {
-	z-index: -2;
     position: fixed;
     top: 0;
     right: 0;
