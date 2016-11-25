@@ -44,7 +44,7 @@ h1 {
 }
 
 body{
-    background-image: url(images/windmill.png), url(images/ba.jpg);
+    background-image: url(images/cloud1.png), url(images/windmill.png), url(images/ba.jpg);
     background-size: cover, cover;   
     background-repeat: no-repeat, no-repeat;
     background-position: center, center; 
@@ -59,17 +59,6 @@ body{
     height: auto; 
     vertical-align: 0%;
 }
-
-#cloud1{
-	z-index: 0;
-	size: cover;
-	position: center;
-	max-width: 100%; 
-    height: auto; 
-    vertical-align: 0%;
-}
-
-
 
 #email{
 	width: 50px;
