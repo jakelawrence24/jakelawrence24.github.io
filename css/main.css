@@ -60,10 +60,6 @@ body{
     vertical-align: 0%;
 }
 
-#mqs{
-	marquee-speed: fast;
-}
-
 #cloud1{
 	z-index:-1;
 	size: cover;
