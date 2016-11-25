@@ -1,19 +1,61 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" type="text/css" href="css/main.css">
 <html>
 
 	<head>
-		<!--<marquee><img src="css/images/cloud1.png" id="test"></marquee>
-		<marquee><img src="css/images/cloud2.png" id="test"></marquee>
-		<marquee><img src="css/images/cloud3.png" id="test"></marquee>
-		<marquee><img src="css/images/cloud4.png" id="test"></marquee>!-->
-		<link rel="shortcut icon" type="image/png" href="css/images/favicon.png"/>
-		<h1>Jake Lawrence</h1>
-		<h2>Programmer.</h2>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/typed.js" type="text/javascript"></script>
+		<script>
+		  $(function(){
+				$(".autotype").typed({
+				            strings: ["Programmer.", "Student.", "Tennis Enthusiast.", "Amateur Designer.", "Avid learner."],
+				            // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
+				            stringsElement: null,
+				            // typing speed
+				            typeSpeed: 100,
+				            // time before typing starts
+				            startDelay: 500,
+				            // backspacing speed
+				            backSpeed: 50,
+				            // shuffle the strings
+				            shuffle: false,
+				            // time before backspacing
+				            backDelay: 600,
+				            // loop
+				            loop: false,
+				            // false = infinite
+				            loopCount: false,
+				            // show cursor
+				            showCursor: true,
+				            // character for cursor
+				            cursorChar: "|",
+				            // attribute to type (null == text)
+				            attr: null,
+				            // either html or text
+				            contentType: 'html',
+				            // call when done callback function
+				            callback: function() {},
+				            // starting callback function before each string
+				            preStringTyped: function() {},
+				            //callback for every typed string
+				            onStringTyped: function() {},
+				            // callback for reset
+				            resetCallback: function() {}
+				        });
+				    });
+		</script>
 	</head>
 
 	<body align="center">
+		<marquee scrollamount="2"><img src="css/images/cloud1.png" id="cloud1"></marquee>
+		<img src="css/images/cloud2.png" id="test">
+		<img src="css/images/cloud3.png" id="test">
+		<img src="css/images/cloud4.png" id="test">
+		<link rel="shortcut icon" type="image/png" href="css/images/favicon.png"/>
+		<div class="top">
+			<h1>Jake Lawrence</h1>
+			<strong><span class="autotype"></span></strong>
+		</div>
 		<br>
 		<a href="mailto:jake.lawrence@temple.edu"><img src="css/images/email.png" id="email"></a>
 		<a href="https://www.linkedin.com/in/c-lawrence/" target="_blank"><img src="css/images/linkedin.png" id="linkedin"></a>
