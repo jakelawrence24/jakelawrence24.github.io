@@ -1,2 +1,2 @@
-# jakelawrence24.github.io
+# jlawrence.co
 Personal Website
