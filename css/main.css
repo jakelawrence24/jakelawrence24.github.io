@@ -2,7 +2,8 @@
 html, body {
 	margin: 0; 
 	height: 100%; 
-	overflow: hidden
+    overflow-x: hidden; 
+    overflow-y: hidden;
 	-webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
