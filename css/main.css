@@ -1,5 +1,5 @@
 
-html, body {
+html, body{
 	margin: 0; 
 	height: 100%; 
     overflow-x: hidden; 
@@ -10,6 +10,8 @@ html, body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    user-drag: none; 
+	-webkit-user-drag: none;
 }
 
 @font-face {
@@ -137,6 +139,9 @@ a:active {
     left: 0;
     margin-right: auto;
     margin-left:auto;
+    user-drag: none;
+    -moz-user-select: none; 
+    -webkit-user-drag: none;
 }
 
 .bottom {
