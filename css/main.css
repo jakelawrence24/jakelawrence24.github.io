@@ -175,3 +175,7 @@ a:active {
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.date{
+    background-color: yellow;
+}

@@ -1,0 +1,29 @@
+.date{
+    background-color:#ffcccc;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.age{
+    background-color:#ffd699;
+}
+
+.height{
+    background-color:#ffff99;
+}
+.weight{
+    background-color:#c2f0c2;
+}
+.bp{
+    background-color:#b3d1ff;
+}
+.snapshot{
+    background-color:#e6ccff;
+}
+
+.snapshot-img{
+    width:50px;
+    height:auto;
+    padding-top:5px;
+    padding-bottom:2px;
+}
