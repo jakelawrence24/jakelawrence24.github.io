@@ -62,7 +62,7 @@ h1 {
 }
 
 body{
-    background-image: url(images/cloud1.png), url(images/windmill.png), url(images/ba.jpg);
+    background-image: url(images/cloud1.png), url(images/windmill.png), url(images/ba.png);
     background-size: cover,cover, cover;   
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center, center, center; 
@@ -178,4 +178,13 @@ a:active {
 
 .date{
     background-color: yellow;
+}
+
+img{
+    user-drag: none; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }

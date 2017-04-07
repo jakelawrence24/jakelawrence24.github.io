@@ -57,6 +57,7 @@ a:active {
 #title{
 	font-size: 40px;
 	text-decoration: underline;
+    margin-bottom: 0px;
 }
 
 #back{
@@ -66,4 +67,12 @@ a:active {
 	margin-left: 10px;
     margin-top: 2px;
     position: relative;
+}
+
+.bl-title{
+    font-size: 20px;
+    font-family: pixel;
+    color: white;
+    list-style: none;
+    margin-right:37px;
 }
