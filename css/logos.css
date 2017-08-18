@@ -1,0 +1,23 @@
+html, body{
+    height: 100%;
+}
+.col-md-12{
+    padding: 10px;
+}
+
+.container{
+    width: 90%;
+}
+
+.logo-header{
+    padding: 5px;
+    background-color: #0EBFE9;
+}
+
+.bl{
+    position: absolute;
+}
+
+.navbar{
+    background-color: #2196F3;
+}

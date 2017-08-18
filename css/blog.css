@@ -74,5 +74,6 @@ a:active {
     font-family: pixel;
     color: white;
     list-style: none;
-    margin-right:37px;
+    display: block;
+    margin: 10px;
 }
