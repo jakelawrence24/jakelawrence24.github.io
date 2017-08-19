@@ -5,6 +5,11 @@ html, body{
     padding: 10px;
 }
 
+img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 .container{
     width: 90%;
     padding: 10px;
