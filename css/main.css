@@ -1,186 +1,56 @@
-html, body{
-	margin: 0; 
-	height: 100%; 
-    overflow-x: hidden; 
-    overflow-y: hidden;
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    user-drag: none; 
-	-webkit-user-drag: none;
+* { 
+    font-family: 'Open Sans', sans-serif;
 }
 
-@font-face {
-    font-family: pixelatedFont;
-    src: url(fonts/fipps.otf);
+html {
+    background-color: white;
+    height: 100%;
 }
 
-@font-face {
-    font-family: pixel;
-    src: url(fonts/pixel.ttf);
+body {
+    background-color: white !important;
+}
+
+body {
+    height: 100% !important;
+}
+.site-head-front{
+    height: 150px;
+    border-bottom: 17px solid black;
+    background-color: white !important;
+}
+
+.site-head-middle{
+    display: flex;
+    height: 147px;
+    border-bottom: 11px solid white;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column;
 }
 
 
-h1 {
-	z-index: 0;
-    font-family: pixelatedFont;
-    text-align: center;
-    font-size: 60px;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-.autotype{
-	z-index: 0;
-	font-family: pixel;
-	text-align: center;
-	font-size: 40px;
-	padding: 0px;
-	margin: 0px;
-}
-
-#iam{
-	z-index: 0;
-	font-family: pixel;
-	text-align: center;
-	font-size: 40px;
-	padding: 0px;
-	margin: 0px;
-}
-
-body{
-    background-image: url(images/cloud1.png), url(images/windmill.png), url(images/ba.png);
-    background-size: cover,cover, cover;   
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center, center, center; 
-    background-color: transparent, #43d7e8, transparent;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
-    image-rendering: -webkit-optimize-contrast;
-    -ms-interpolation-mode: nearest-neighbor;
-    image-rendering: pixelated;
-}
-
-#windmill{
-	z-index:-1;
-	size: cover;
-	position: center;
-	max-width: 100%; 
-    height: auto; 
-    vertical-align: 0%;
-}
-
-#email{
-	width: 50px;
-	height: auto;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-#tl{
-	width: 50px;
-	height: auto;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-#linkedin{
-	width: 50px;
-	height: auto;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-#github{
-	width: 50px;
-	height: auto;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-#footer{
-	font-family: pixel;
-	text-align: center;
-	font-size: 30px;
-	margin:2%;
+#main-logo {
+    height: 75px;
+    width: auto;
 }
 
 a{
-	text-decoration: none;
+    color: black !important;
 }
 
-a:link {
-	color:black;
+li{
+    list-style: none;
+    margin-left: 0;
+    padding-left: 1em;
+    text-indent: -1.5em;
 }
 
-a:visited {
-	color:black;
+a:hover{
+    text-decoration: none !important;
+    color: #0D47A1 !important;
 }
 
-a:hover {
-	color:white;
-}
-a:active {
-	color:lightgrey;
-}
-
-.top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left:auto;
-    user-drag: none;
-    -moz-user-select: none; 
-    -webkit-user-drag: none;
-}
-
-.bottom {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    margin-right: auto;
-    margin-left:auto;
-}
-
-.typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-    font-size: 30px;
-}
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-
-.date{
-    background-color: yellow;
-}
-
-img{
-    user-drag: none; 
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    image-rendering:auto;
+.container{
+    padding-top: 50px;
 }
