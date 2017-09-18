@@ -27,6 +27,7 @@ body {
     justify-content:center;
     align-content:center;
     flex-direction:column;
+    min-height: auto;
 }
 
 
@@ -53,4 +54,21 @@ a:hover{
 
 .container{
     padding-top: 50px;
+}
+
+@media (max-width: 600px){
+    .site-head-front{
+        height: 303px;
+        border-bottom: 17px solid black;
+        background-color: white !important;
+    }
+    .site-head-middle{
+        display: flex;
+        height: 300px;
+        border-bottom: 11px solid white;
+        justify-content:center;
+        align-content:center;
+        flex-direction:column;
+        min-height: auto;
+    }
 }
