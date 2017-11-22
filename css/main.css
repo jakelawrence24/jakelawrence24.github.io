@@ -58,21 +58,26 @@ a:hover{
 
 #code-a:hover{
     color: #EF5350 !important;
+    -webkit-transition: color .75s ease;
 }
 
 #resume:hover{
     color: #FFA726 !important;
+    -webkit-transition: color .75s ease;
 }
 #prof:hover{
     color: #FFD600 !important;
+    -webkit-transition: color .75s ease;
 }
 
 #logos:hover{
     color: #00E676 !important;
+    -webkit-transition: color .75s ease;
 }
 
 #contact:hover{
     color: #00E5FF !important;
+    -webkit-transition: color .75s ease;
 }
 
 .container{
