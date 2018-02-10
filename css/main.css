@@ -24,6 +24,10 @@ a:hover{
     cursor: pointer !important;
 }
 
+#main-header{
+    text-decoration: none !important;
+}
+
 #particles-js{
     position: absolute;
     height: 100% !important;
