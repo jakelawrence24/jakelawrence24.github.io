@@ -1,45 +1,96 @@
-* { 
-    font-family: 'Open Sans', sans-serif;
+*{
+    font-family: 'Jura', sans-serif;
 }
 
-html {
+html, body{
     height: 100%;
+    width: 100%;
+    background-color: #000000 !important;
 }
 
-body {
-    height: 100% !important;
-}
-
-h1, h2{
-    display: inline-block !important;
-}
-
-h2{
-    margin-left: 10px;
-}
-.site-head-front{
-    height: 150px;
-    border-bottom: 17px solid black;
-}
-
-.site-head-middle{
-    display: flex;
-    height: 147px;
-    border-bottom: 11px solid white;
-    justify-content:center;
-    align-content:center;
-    flex-direction:column;
-    min-height: auto;
-}
-
-
-#main-logo {
-    height: 75px;
-    width: auto;
+body{
+    color: #ffffff !important;
 }
 
 a{
-    color: black !important;
+    transition-duration: .25s;
+    color: #ffffff !important;
+}
+
+a:hover{
+    transition-duration: .25s;
+    color: #c2c2c2 !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+#particles-js{
+    position: absolute;
+    height: 100% !important;
+    width: 100% !important;
+    z-index: 1;
+}
+
+.container{
+    z-index: 2;
+}
+
+#splash{
+    text-align: center;
+}
+
+.splash-text{
+    font-size: 7em !important;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.splash-subtext{
+    font-size: 3em !important;
+}
+
+.space-break{
+    margin: 15px;
+}
+
+.small-space{
+    margin: 5px;
+}
+
+#about-text{
+    text-align: left;
+    font-size: 1.5em;
+    display: block;
+}
+
+#contact-text{
+    font-size: 2em;
+    width: 100%;
+    margin-bottom: 25px;
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+}
+
+.resume{
+    font-size: 1.5em;
+    display: none;
+    margin-bottom: 100px;
+}
+
+.resume p strong{
+    font-size: 1.7em;
+    text-decoration: underline;
+}
+
+#pdf, #resume-contact{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.description strong{
+    font-size: 1.3em !important;
+    text-decoration: none !important;
 }
 
 li{
@@ -49,66 +100,12 @@ li{
     text-indent: -1.5em;
 }
 
-a:hover{
-    text-decoration: none !important;
-}
-#code-a:hover, #resume:hover, #prof:hover, #logos:hover, #contact:hover{
-    text-decoration: underline !important;
-}
-
-#code-a:hover{
-    color: #EF5350 !important;
-    -webkit-transition: color .75s ease;
-}
-
-#resume:hover{
-    color: #FFA726 !important;
-    -webkit-transition: color .75s ease;
-}
-#prof:hover{
-    color: #FFD600 !important;
-    -webkit-transition: color .75s ease;
-}
-
-#logos:hover{
-    color: #00E676 !important;
-    -webkit-transition: color .75s ease;
-}
-
-#contact:hover{
-    color: #00E5FF !important;
-    -webkit-transition: color .75s ease;
-}
-
-.container{
-    padding-top: 50px;
-}
-
-@media (max-width: 850px){
-    .site-head-front{
-        height: 303px;
-        border-bottom: 17px solid black;
-        background-color: white !important;
-    }
-    .site-head-middle{
-        display: flex;
-        height: 300px;
-        border-bottom: 11px solid white;
-        justify-content:center;
-        align-content:center;
-        flex-direction:column;
-        min-height: auto;
-    }
-}
-
-.resume{
-    min-width: 1200px;
-}
-
-.resume p {
-    font-size: 2em;
-}
-
-.description{
-    font-size: 1.5em !important;
+@media (max-height: 780px) {
+    #contact-text{
+        font-size: 2em;
+        width: 100%;
+        margin-bottom: 25px;
+        position: relative;
+        text-align: center;
+    }    
 }
