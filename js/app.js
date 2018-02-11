@@ -179,25 +179,28 @@ particlesJS.load('particles-js', jsonUri, function() {});
 })(jQuery);
 
 $(document).ready(function(){
+      $('#about').on('click', function(event){
+        if(window.innerHeight > 780){
+          $('#contact-text').css('position', 'fixed');
+        }else{
+          $('#contact-text').css('position', 'relative');
+        }
 
-    $('#about').on('click', function(event){
-      $('#contact-text').css('position', 'fixed');
+        $('#particles-js').style('height', '100%',
+                                 'important');
+        particlesJS.load('particles-js', jsonUri, function() {});
+        $('#resume').style('color', '#ffffff', 'important');
+        $('#resume').style('text-decoration', 'none', 'important');
+        $('.resume').css('display', 'none');
 
-      $('#particles-js').style('height', '100%',
-                               'important');
-      particlesJS.load('particles-js', jsonUri, function() {});
-      $('#resume').style('color', '#ffffff', 'important');
-      $('#resume').style('text-decoration', 'none', 'important');
-      $('.resume').css('display', 'none');
-
-      if($('#about-text').css('display') === 'none'){
-          $('#about').style('color', '#c2c2c2', 'important');
-          $('#about').style('text-decoration', 'underline', 'important');
-          $('#about-text').css('display', 'block');
-      }else{
-          $('#about').css('color', '#ffffff');
-          $('#about').css('text-decoration', 'none');
-          $('#about-text').css('display', 'none');
+        if($('#about-text').css('display') === 'none'){
+            $('#about').style('color', '#c2c2c2', 'important');
+            $('#about').style('text-decoration', 'underline', 'important');
+            $('#about-text').css('display', 'block');
+        }else{
+            $('#about').css('color', '#ffffff');
+            $('#about').css('text-decoration', 'none');
+            $('#about-text').css('display', 'none');
       }
       event.preventDefault();
     });
