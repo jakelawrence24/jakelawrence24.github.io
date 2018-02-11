@@ -189,8 +189,8 @@ $(document).ready(function(){
         $('#particles-js').style('height', '100%',
                                  'important');
         particlesJS.load('particles-js', jsonUri, function() {});
-        $('#resume').style('color', '#ffffff', 'important');
-        $('#resume').style('text-decoration', 'none', 'important');
+        $('#resume').css('color', '#ffffff');
+        $('#resume').css('text-decoration', 'none');
         $('.resume').css('display', 'none');
 
         $('#logos').css('color', '#ffffff');
