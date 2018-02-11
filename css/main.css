@@ -9,6 +9,7 @@ html, body{
 }
 
 body{
+    overflow-y: hidden;
     color: #ffffff !important;
 }
 
@@ -83,7 +84,7 @@ a u{
 #contact-text{
     font-size: 1.6em;
     width: 100%;
-    margin-bottom: 45px;
+    margin-bottom: 5%;
     position: fixed;
     text-align: center;
     bottom: 0;
@@ -118,6 +119,9 @@ li{
 }
 
 @media (max-height: 780px) {
+    body{
+        overflow-y: scroll;
+    }
     #contact-text{
         font-size: 1.6em;
         width: 100%;
