@@ -193,6 +193,10 @@ $(document).ready(function(){
         $('#resume').style('text-decoration', 'none', 'important');
         $('.resume').css('display', 'none');
 
+        $('#logos').css('color', '#ffffff');
+        $('#logos').css('text-decoration', 'none');
+        $('.logos').css('display', 'none');
+
         if($('#about-text').css('display') === 'none'){
             $('#about').style('color', '#c2c2c2', 'important');
             $('#about').style('text-decoration', 'underline', 'important');
@@ -217,6 +221,10 @@ $(document).ready(function(){
         $('#about').css('text-decoration', 'none');
         $('#about-text').css('display', 'none');
 
+        $('#logos').css('color', '#ffffff');
+        $('#logos').css('text-decoration', 'none');
+        $('.logos').css('display', 'none');
+
         if($('.resume').css('display') === 'none'){
             $('#resume').style('color', '#c2c2c2', 'important');
             $('#resume').style('text-decoration', 'underline', 'important');
@@ -225,6 +233,36 @@ $(document).ready(function(){
             $('#resume').style('color', '#ffffff', 'important');
             $('#resume').style('text-decoration', 'none', 'important');
             $('.resume').css('display', 'none');
+        }
+
+
+        event.preventDefault();
+    });
+
+    $('#logos').on('click', function(event){
+        var newHeight = $('.logos').css('height').split('p')[0] * 2.25;
+        $('#particles-js').style('height', newHeight.toString() + 'px',
+                                 'important');
+        particlesJS.load('particles-js', jsonUri, function() {});
+
+        $('#contact-text').css('position', 'relative');
+
+        $('#about').css('color', '#ffffff');
+        $('#about').css('text-decoration', 'none');
+        $('#about-text').css('display', 'none');
+
+        $('#resume').css('color', '#ffffff');
+        $('#resume').css('text-decoration', 'none');
+        $('.resume').css('display', 'none');
+
+        if($('.logos').css('display') === 'none'){
+            $('#logos').style('color', '#c2c2c2', 'important');
+            $('#logos').style('text-decoration', 'underline', 'important');
+            $('.logos').css('display', 'block');
+        }else{
+            $('#logos').style('color', '#ffffff', 'important');
+            $('#logos').style('text-decoration', 'none', 'important');
+            $('.logos').css('display', 'none');
         }
 
 

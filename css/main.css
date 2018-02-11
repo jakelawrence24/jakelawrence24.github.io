@@ -67,6 +67,15 @@ a:hover{
     display: block;
 }
 
+.logos{
+    display: none;
+}
+
+
+.logo-p{
+    margin-bottom: 25px;
+}
+
 #contact-text{
     font-size: 2em;
     width: 100%;
