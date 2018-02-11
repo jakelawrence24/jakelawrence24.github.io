@@ -1,2 +1,3 @@
-# jlawrence.co
+# lawja.io
 Personal Website
+https://lawja.io
