@@ -36,7 +36,7 @@ var partJson = {
       }
     },
     "size": {
-      "value": 4,
+      "value": 2,
       "random": true,
       "anim": {
         "enable": false,
@@ -198,7 +198,7 @@ $(document).ready(function(){
         $('.logos').css('display', 'none');
 
         if($('#about-text').css('display') === 'none'){
-            $('#about').style('color', '#c2c2c2', 'important');
+            $('#about').style('color', '#FFB732', 'important');
             $('#about').style('text-decoration', 'underline', 'important');
             $('#about-text').css('display', 'block');
         }else{
@@ -226,7 +226,7 @@ $(document).ready(function(){
         $('.logos').css('display', 'none');
 
         if($('.resume').css('display') === 'none'){
-            $('#resume').style('color', '#c2c2c2', 'important');
+            $('#resume').style('color', '#FFB732', 'important');
             $('#resume').style('text-decoration', 'underline', 'important');
             $('.resume').css('display', 'block');
         }else{
@@ -256,7 +256,7 @@ $(document).ready(function(){
         $('.resume').css('display', 'none');
 
         if($('.logos').css('display') === 'none'){
-            $('#logos').style('color', '#c2c2c2', 'important');
+            $('#logos').style('color', '#FFB732', 'important');
             $('#logos').style('text-decoration', 'underline', 'important');
             $('.logos').css('display', 'block');
         }else{
