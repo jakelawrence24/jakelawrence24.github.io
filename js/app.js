@@ -178,7 +178,51 @@ particlesJS.load('particles-js', jsonUri, function() {});
   };
 })(jQuery);
 
+var logosContents = `
+<!-- Column 1 -->
+<div class="col-md-3">
+  <div class="col-md-12 logo-p">
+    <a href="https://tudev.org" target="_blank">
+      <img src="./assets/outline_nofill_red.svg">
+    </a>
+  </div>
+  <div class="col-md-12 logo-p" style="background-color: white">
+    <img src="./assets/html5.svg">
+  </div>
+</div>
+<!-- Column 2 -->
+<div class="col-md-3">
+  <div class="col-md-12 logo-p">
+    <img src="./assets/mtns.svg">
+  </div>
+  <div class="col-md-12">
+    <img src="./assets/pool.svg">
+  </div>
+</div>
+<!-- Column 3 -->
+<div class="col-md-3">
+  <div class="col-md-12 logo-p">
+    <a href="https://tudev.org/lhd" target="_blank">
+      <img src="./assets/lhd_philly_2017.svg">
+    </a>
+  </div>
+</div>
+<!-- Column 4 -->
+<div class="col-md-3">
+  <div class="col-md-12 logo-p">
+    <a href="https://lawja.io">
+      <img src="./assets/rocket.svg">
+    </a>
+  </div>
+</div>
+`
+
 $(document).ready(function(){
+      $(document).ready(function(){
+        $('#about').style('color', '#61dafb', 'important');
+        $('#about').style('text-decoration', 'underline', 'important');
+        $('#about-text').css('display', 'block');
+      });
       var aboutFlag = true;
       var resumeFlag = false;
       var logosFlag = false;
@@ -297,6 +341,9 @@ $(document).ready(function(){
     });
 
     $('#logos').on('click', function(event){
+        $('#logos-row'),html(logosContents);
+
+
         aboutFlag = false;
         resumeFlag = false;
         logosFlag = true;
