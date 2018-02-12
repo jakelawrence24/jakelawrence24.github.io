@@ -48,13 +48,13 @@ var partJson = {
     "line_linked": {
       "enable": false,
       "distance": 150,
-      "color": "#000000",
+      "color": "#FFB732",
       "opacity": 0.4,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 1,
+      "speed": 0.2,
       "direction": "none",
       "random": true,
       "straight": false,
@@ -179,10 +179,62 @@ particlesJS.load('particles-js', jsonUri, function() {});
 })(jQuery);
 
 $(document).ready(function(){
+      var aboutFlag = true;
+      var resumeFlag = false;
+      var logosFlag = false;
+      $('#about').hover(function(event){
+        $('#about').style('color', '#FFB732', 'important');
+      });
+      $('#about').mouseleave(function(event){
+        if(aboutFlag){
+          $('#about').style('color', '#61dafb', 'important');
+        }else{
+          $('#about').style('color', '#ffffff', 'important');
+        }
+      });
+
+      $('#logos').hover(function(event){
+        $('#logos').style('color', '#FFB732', 'important');
+      });
+      $('#logos').mouseleave(function(event){
+        if(logosFlag){
+          $('#logos').style('color', '#61dafb', 'important');
+        }else{
+          $('#logos').style('color', '#ffffff', 'important');
+        }
+      });
+
+      $('#resume').hover(function(event){
+        $('#resume').style('color', '#FFB732', 'important');
+      });
+      $('#resume').mouseleave(function(event){
+        if(resumeFlag){
+          $('#resume').style('color', '#61dafb', 'important');
+        }else{
+          $('#resume').style('color', '#ffffff', 'important');
+        }
+      });
+
+      $('.trigger').hover(function(event){
+        $('.easter-egg').css('display', 'block');
+        $('.easter-egg').css('color', '#FFB732');
+      });
+
+      $('.trigger').mouseleave(function(event){
+        $('.easter-egg').css('display', 'none');
+      });
+
+
       $('#about').on('click', function(event){
+        aboutFlag = true;
+        resumeFlag = false;
+        logosFlag = false;
+        
         if(window.innerHeight > 780){
+          $('body').style('overflow-y', 'hidden', 'important');
           $('#contact-text').css('position', 'fixed');
         }else{
+          $('body').style('overflow-y', 'scroll', 'important');
           $('#contact-text').css('position', 'relative');
         }
 
@@ -210,10 +262,15 @@ $(document).ready(function(){
     });
 
     $('#resume').on('click', function(event){
+        aboutFlag = false;
+        resumeFlag = true;
+        logosFlag = false;
         var newHeight = $('.resume').css('height').split('p')[0] * 1.2;
         $('#particles-js').style('height', newHeight.toString() + 'px',
                                  'important');
         particlesJS.load('particles-js', jsonUri, function() {});
+
+        $('body').style('overflow-y', 'scroll', 'important');
 
         $('#contact-text').css('position', 'relative');
 
@@ -240,10 +297,15 @@ $(document).ready(function(){
     });
 
     $('#logos').on('click', function(event){
+        aboutFlag = false;
+        resumeFlag = false;
+        logosFlag = true;
         var newHeight = $('.logos').css('height').split('p')[0] * 2.25;
         $('#particles-js').style('height', newHeight.toString() + 'px',
                                  'important');
         particlesJS.load('particles-js', jsonUri, function() {});
+
+        $('body').style('overflow-y', 'scroll', 'important');
 
         $('#contact-text').css('position', 'relative');
 

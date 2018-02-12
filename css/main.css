@@ -26,6 +26,12 @@ a:hover{
 }
 
 a u{
+    transition-duration: .25s;
+    color: #61dafb !important;
+}
+
+a u:hover{
+    transition-duration: .25s;
     color: #FFB732 !important;
 }
 
@@ -51,7 +57,15 @@ a u{
 .splash-text{
     font-size: 5.6em !important;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.easter-egg{
+    display: none;
+    text-align: center;
+    margin-bottom: 0;
+    color: black;
+    transition-duration: 2s;
 }
 
 .splash-subtext{
