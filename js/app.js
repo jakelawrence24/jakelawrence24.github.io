@@ -341,7 +341,7 @@ $(document).ready(function(){
     });
 
     $('#logos').on('click', function(event){
-        $('#logos-row'),html(logosContents);
+        $('#logos-row').html(logosContents);
 
 
         aboutFlag = false;
