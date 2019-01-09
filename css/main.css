@@ -1,13 +1,11 @@
 html,
 body {
-    background-color: blue;
     width: 100% !important;
     height: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
     overflow-x: hidden;
     font-family: 'Ubuntu Mono', monospace !important;
-    background-color: #ffffff;
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d9d9d9' fill-opacity='0.16'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -167,4 +165,39 @@ body {
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     display: block;
+}
+
+.ql-contents h4 {
+    margin-top: 10px;
+}
+
+.ql-entry {
+    margin: 10px;
+    margin-left: 0px;
+    text-align: left;
+    vertical-align: top;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.ql-entry a {
+    margin-right: 5px;
+}
+
+.ql-thumbnail {
+    width: 40px;
+    height: 40px;
+    font-size: 50px;
+    margin-right: 5px;
+    margin-top: 0 !important;
+    color: #3498db
+}
+
+.ql-bar {
+    height: 40px;
+    width: 2px;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: black;
 }
