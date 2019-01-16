@@ -1,9 +1,10 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+
     <style>
-        h2 {
+        h2,
+        h4 {
             text-decoration: underline;
         }
 
@@ -11,8 +12,20 @@
             text-align: center;
         }
 
+        html {
+            font-family: 'Ubuntu Mono', monospace !important;
+            background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d9d9d9' fill-opacity='0.16'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
         body {
-            padding: 10px !important;
+            font-family: 'Ubuntu Mono', monospace !important;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .lab-content,
+        .lab-materials {
+            padding-left: 20px;
         }
     </style>
 </head>
@@ -21,12 +34,12 @@
     <div class="header">
         <h1>CIS 3207 Section 005 - Operating Systems - Lab Site</h1>
         <img src="https://imgs.xkcd.com/comics/operating_systems.png">
+        <p><strong>Professor:</strong> John Fiore</p>
+        <p><strong>TA: </strong>Christopher (Jake) Lawrence</p>
+        <p><strong>Email: </strong>jake [dot] lawrence [at] temple [dot] edu</p>
+        <p><a href="https://cis.temple.edu/~jfiore/2019/spring/3207/handouts/syllabus/" target="_blank">Syllabus</a></p>
     </div>
 
-    <h2>Contact</h2>
-    <p><strong>Professor:</strong> John Fiore</p>
-    <p><strong>TA: </strong>Christopher (Jake) Lawrence</p>
-    <p><strong>Email: </strong>jake [dot] lawrence [at] temple [dot] edu</p>
     <h2>Meeting times</h2>
     <p><strong>Lecture:</strong> TR 3:30 - 4:50 Tuttleman 402</p>
     <p><strong>Lab:</strong> W 9 - 10:50 SERC 206</p>
@@ -37,29 +50,103 @@
     <li>Ask questions</li>
     <li>Plan your code / implementation</li>
     <li>This class is difficult, but with curiosity and hard work you will do fine. You can do this.</li>
+    <li>To re-emphasize, <strong>start labs early</strong></li>
     <h2>Labs</h2>
-    <h3>Lab 1 - Discrete Event Simulator</h3>
-    <p><a href="https://cis.temple.edu/~jfiore/2019/spring/3207/assignments/discrete_event_sim/" target="_blank">Assignment
-            Details</a></p>
     <p>
-        <a href="https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html" target="_blank">
-            Plenty of information on makefiles
-        </a>
+        Every single one of your labs must be submitted with two written text files, <i>RUNS.txt</i> and <i>README.txt</i>.
+        Your README.txt is a text file that will describe your program. Write it as if you are as addressing a
+        technical manager whom you want to understand what you have done, the alternatives that you had, why you made
+        the choices you made, and how you tested your program. Your RUNS.txt should be a document describing the data
+        you have used to test your program and what you have learned from it.
     </p>
-    <p><strong>Steps for completion (Not required, just advice)</strong></p>
-    <ol>
-        <li>Pseudocode</li>
-        <li>Write data structures (FIFO Queue, Priority Queue)</li>
-        <li>Implement Logic (CPU, Disks)</li>
-        <li>File reader</li>
-        <li>Logs</li>
-        <li>Stats</li>
-        <li>RUNS.txt and README.txt</li>
-    </ol>
-    <p><a href="/3207/lab1/makefile" target="_blank">my makefile</a></p>
-    <p><a href="/3207/lab1/linkedList.c" target="_blank">my linked list template</a></p>
-    <p><a href="/3207/lab1/linkedList.h" target="_blank">my linked list header file</a></p>
-    <p><a href="/3207/lab1/main.c" target="_blank">main.c</a></p>
+    <p>
+        Students have the option of demonstrating their lab to the lab instructor (me). I strongly suggest you do this.
+        It will be much easier to give credit for your work if you can explain what you have done. Students should
+        email me by the due date to express their intention to demo the lab and we will arrange a time typically within
+        one week for the demonstration. Your demonstration can also occur during lab time or during office hours,
+        permitting
+        other students do not have questions or need help with the current assignment.
+    </p>
+    <div>
+        <h3>Lab 1 - Discrete Event Simulator - Due Feb 6 (on canvas)</h3>
+        <div class="lab-content">
+            <p>
+                <a href="https://cis.temple.edu/~jfiore/2019/spring/3207/assignments/discrete_event_sim/" target="_blank">
+                    Assignment Details
+                </a>
+            </p>
+            <p>
+                <a href="https://learnxinyminutes.com/docs/c/" target="_blank">C refresher</a>
+            </p>
+            <p><strong>Steps for completion (Not required, just advice)</strong></p>
+            <ol>
+                <li>Pseudocode</li>
+                <li>Write data structures (FIFO Queue, Priority Queue)</li>
+                <li>Implement Logic (CPU, Disks)</li>
+                <li>File reader</li>
+                <li>Logs</li>
+                <li>Stats</li>
+                <li>RUNS.txt and README.txt</li>
+            </ol>
+
+            <h4>Materials from 1/16/19</h4>
+            <div class="lab-materials">
+                <p>
+                    <a href="https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html" target="_blank">
+                        Plenty of information on makefiles
+                    </a>
+                </p>
+                <p><a href="/3207/lab1/makefile" target="_blank">basic makefile that I used</a></p>
+                <p><a href="/3207/lab1/linkedList.c" target="_blank">my linked list template</a></p>
+                <p><a href="/3207/lab1/linkedList.h" target="_blank">my linked list header file</a></p>
+                <p><a href="/3207/lab1/main.c" target="_blank">main.c for linked list template</a></p>
+            </div>
+        </div>
+        <!--
+        <h3>Lab X - - Due [] (on canvas)</h3>
+        <div class="lab-content">
+            <p>
+                <a href="#" target="_blank">
+                    Assignment Details
+                </a>
+            </p>
+            <p><strong>Steps for completion (Not required, just advice)</strong></p>
+            <ol>
+                <li>Pseudocode</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li>RUNS.txt and README.txt</li>
+            </ol>
+
+            <h4>Materials from x/y/19</h4>
+            <div class="lab-materials">
+                <p><a href="#" target="_blank">...</a></p>
+            </div>
+        </div>
+        -->
+    </div>
+    <div>
+        <h2>Honor Code</h2>
+        <p>
+            The usual standards of academic honesty apply to this lab. While you are encouraged to discuss ideas with
+            other students, what you turn in should be your own work. Any substantial help you have received from a
+            person (e.g., fellow student, friend, relative, etc.) or other resource (e.g., website, supplementary
+            textbook, etc.) should cited in your submission. Uncredited assistance will be considered a violation of
+            the honor code.
+        </p>
+        <p>
+            The following are definite violations of the honor code
+        </p>
+        <ul>
+            <li>Looking at another student's answers</li>
+            <li>Showing another student your answers</li>
+            <li>Turning in work that is clearly not original, e.g., two students turning in virtually identical answers</li>
+        </ul>
+        <p>It bears repeating that the work you turn in is to be your own.</p>
+    </div>
 </body>
 
 </html>
