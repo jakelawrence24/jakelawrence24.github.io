@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-
-typedef struct LLNode{
-    int val;
-    struct LLNode *next;
-} LLNode;
+#include "linkedList.h"
 
 int printLL(LLNode* root){
     if(root->next != NULL){
